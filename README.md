@@ -16,9 +16,16 @@ JouerFlux is an application for managing firewalls, policies, and firewall rules
 
 
 2. Run the application:
+   Linux/MacOS
     ```sh
     $ docker build . --tag jouerflux-mini:latest
     $ docker run -it -p 80:5000 jouerflux-mini
+    ```
+    
+    Windows
+    ```sh
+    $ docker build --platform linux/arm64 . --tag jouerflux-mini:latest
+    $ docker run --platform linux/arm64 -it -p 80:5000 jouerflux-mini
     ```
 
 ## API Usage
